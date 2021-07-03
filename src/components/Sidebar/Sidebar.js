@@ -1,6 +1,7 @@
 import React from 'react';
 import './Sidebar.css'
-import { Home, ChatBubbleOutline, Email, ShoppingCart, DateRange, Person, Pages,Apps,Equalizer,TableChart,Map,FormatAlignJustify } from '@material-ui/icons';
+import { Home, ChatBubbleOutline, Email, ShoppingCart, DateRange, Person, Pages, Apps, Equalizer, TableChart, Map, FormatAlignJustify } from '@material-ui/icons';
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
     return (
@@ -13,20 +14,26 @@ const Sidebar = () => {
                             <Home className="sidebarIcon" />
                             Home
                         </li>
+                        <Link to="/users" className="link">
+                            <li className="sidebarListItem">
+                                <Person className="sidebarIcon" />User
+                            </li>
+                        </Link>
+                        <Link to="/products" className="link">
+                            <li className="sidebarListItem">
+                                <ShoppingCart className="sidebarIcon" /> Product
+                            </li>
+                        </Link>
+
                         <li className="sidebarListItem">
                             <Email className="sidebarIcon" />email
                         </li>
                         <li className="sidebarListItem">
                             <ChatBubbleOutline className="sidebarIcon" />Chat
                         </li>
-                        <li className="sidebarListItem">
-                            <ShoppingCart className="sidebarIcon" /> eCommerce
-                        </li>
+
                         <li className="sidebarListItem">
                             <DateRange className="sidebarIcon" />Calender
-                        </li>
-                        <li className="sidebarListItem">
-                            <Person className="sidebarIcon" />Profile
                         </li>
                         <li className="sidebarListItem">
                             <Pages className="sidebarIcon" />Page
