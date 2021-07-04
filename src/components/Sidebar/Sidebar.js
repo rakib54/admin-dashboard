@@ -10,10 +10,12 @@ const Sidebar = () => {
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Dashboard</h3>
                     <ul className="sidebarList ">
-                        <li className="sidebarListItem active">
-                            <Home className="sidebarIcon" />
-                            Home
-                        </li>
+                        <Link to="/" className="link">
+                            <li className="sidebarListItem active">
+                                <Home className="sidebarIcon" />
+                                Home
+                            </li>
+                        </Link>
                         <Link to="/users" className="link">
                             <li className="sidebarListItem">
                                 <Person className="sidebarIcon" />User

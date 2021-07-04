@@ -7,12 +7,12 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import User from "./components/pages/User/User";
 import NewUser from "./components/pages/NewUser/NewUser";
 import ProductList from "./components/pages/ProductList/ProductList";
 import Product from "./components/pages/product/Product";
+import NewProduct from "./components/pages/NewProduct/NewProduct";
 
 const App = () => {
   return (
@@ -38,6 +38,9 @@ const App = () => {
           </Route>
           <Route path="/product/:productId">
             <Product />
+          </Route>
+          <Route path="/newProduct">
+            <NewProduct />
           </Route>
         </Switch>
       </div>

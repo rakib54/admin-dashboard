@@ -38,7 +38,7 @@ const UserList = () => {
             renderCell: (params) => {
                 return (
                     <>
-                        <Link to={"/users/" + params.row.id}>
+                        <Link to={"/user/" + params.row.id}>
                             <button className="userListEdit">Edit</button>
                         </Link>
                         <Delete onClick={() => handleClick(params.row.id)} className="userListDelete" />

@@ -2,16 +2,17 @@ import React from 'react';
 import './Navbar.css'
 import { NotificationsNone, MailOutline, Settings, HelpOutline, Language, Search } from '@material-ui/icons';
 import admin from '../../assets/admin.jpg'
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
         <div className="navbar">
             <div className="topBarWrapper">
                 <div className="topLeft">
-                    <span className="logo">Admin</span>
+                    <Link to="/" className="logo"><span ></span>Admin</Link>
                 </div>
-                <div className="topLeft">
-                    <Search className="SearchIcon" />
+                <div className="topLeft search">
+                    <Search />
                     <input className="InputSearch" type="search" name="search" placeholder="search" id="" />
                 </div>
                 <div className="topRight">

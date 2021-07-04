@@ -14,11 +14,13 @@
     justify-content: space-between;
 }
 .logo{
+    text-decoration: none;
     font-weight: bold;
-    font-size: 20px;
-    color: red;
+    font-size: 26px;
+    color: royalblue;
     cursor: pointer;
 }
+
 .topRight{
     display: flex;
     align-items: center;
@@ -56,8 +58,10 @@
    height: 30px;
 }
 
-.SearchIcon{
-    margin-top: 10px;
-
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 5px;
 }
 

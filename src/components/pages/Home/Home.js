@@ -4,12 +4,13 @@ import Charts from '../../charts/Charts';
 import WidgetLg from '../../WidgetLg/WidgetLg';
 import WidgetsSm from '../../widgetsSm/WidgetsSm';
 import './Home.css'
+import { data } from '../../FakeData/FakeData';
 
 const Home = () => {
     return (
         <div className="home">
             <Features />
-            <Charts />
+            <Charts data={data} dataKey="sales" title="Revenue" />
             <div className="homeWidgets">
                 <WidgetsSm />
                 <WidgetLg />
