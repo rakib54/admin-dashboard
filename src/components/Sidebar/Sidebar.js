@@ -1,7 +1,7 @@
 import React from 'react';
 import './Sidebar.css'
 import { Home, ChatBubbleOutline, Email, ShoppingCart, DateRange, Person, Pages, Apps, Equalizer, TableChart, Map, FormatAlignJustify } from '@material-ui/icons';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Sidebar = () => {
     return (
@@ -10,22 +10,22 @@ const Sidebar = () => {
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Dashboard</h3>
                     <ul className="sidebarList ">
-                        <Link to="/" className="link">
-                            <li className="sidebarListItem active">
+                        <NavLink exact to="/" activeClassName="menu-active" className="nav-link" >
+                            <li className="sidebarListItem ">
                                 <Home className="sidebarIcon" />
                                 Home
                             </li>
-                        </Link>
-                        <Link to="/users" className="link">
+                        </NavLink>
+                        <NavLink to="/users" activeClassName="menu-active" className="nav-link" >
                             <li className="sidebarListItem">
                                 <Person className="sidebarIcon" />User
                             </li>
-                        </Link>
-                        <Link to="/products" className="link">
+                        </NavLink>
+                        <NavLink to="/products" activeClassName="menu-active" className="nav-link" >
                             <li className="sidebarListItem">
                                 <ShoppingCart className="sidebarIcon" /> Product
                             </li>
-                        </Link>
+                        </NavLink>
 
                         <li className="sidebarListItem">
                             <Email className="sidebarIcon" />email
